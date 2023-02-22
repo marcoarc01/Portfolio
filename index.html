@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto+Slab:wght@100;200&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin-left: 15%;
+            margin-left: 15%;
+        }
+         .container {
+            display: grid;
+            grid-auto-flow: column;
+            grid-auto-columns: 1fr;
+         }
+        #header {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 42px;
+            /* identical to box height */
+            text-decoration-line: underline;
+            color: #070F18;
+            margin-top: 40px;
+            margin-bottom: 50px;
+        }
+        #menu ul {
+             padding: 0;
+             margin: 0;
+             list-style-type: none;
+        }
+        #menu li {
+            display: inline-block;
+            margin-left: 20px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+             /* identical to box height */
+            text-align: center;
+            color: #070F18;
+
+        }
+        #menu {
+            text-align: right;
+            margin-top: 49px;
+            margin-right: 196px;
+        }
+        a {
+            color: #070F18;
+            text-decoration: none;
+        }
+        #name1 {
+            margin-right: 10%;
+        }
+        #name1 h1 {
+            margin-top: 83px;
+            margin-bottom: 12px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 82px;
+            color: #000000;
+        }
+        #name1 p {
+            margin-top: 12px;
+            margin-bottom: 32px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 32px;
+            /* or 200% */
+            color: #575455;
+        }
+        #button {
+            background: #1F7CFF;
+            border-radius: 50px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            /* identical to box height */
+            text-align: center;
+            padding: 10px 25px 10px 25px;
+            color: #FFFFFF;
+        }
+        .clienttext {
+            text-align: center;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: left;
+            color: #070F18;
+        }
+        .clientlogo {
+            text-align: left;
+            margin-top: 5px;
+            width: 100px;
+            height: 15px;
+            color: #000000;
+        }
+        #imagem img {
+            border-radius: 40px;
+            width: 75%;
+            height: 80%;
+            margin-top: 15%;
+            margin-left: 1%;
+        }
+        #parceiros {
+            margin-top: 7%;
+            margin-bottom: 7%;
+        }
+        #service h3 {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            /* identical to box height */
+            text-align: center;
+            color: #1F7CFF;
+            margin-bottom: 0.1%;
+        }
+        #service1 {
+            text-align: center;
+            margin-right: 15%;
+            padding: 0;
+        }
+        #service1 h1 {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 54px;
+            /* identical to box height */
+            text-align: center;
+            color: #000000;
+            margin-top: 1%;
+            margin-bottom: 1%;
+        }
+        #service1 h2 {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 32px;
+            /* or 200% */
+            text-align: center;
+            color: #575455;
+            margin-top: 1%;
+        }
+        #imagem2 {
+            margin-top: 15%;
+            text-align: center;
+            margin-right: 50%;
+        }
+        .service2 h3 {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 30px;
+            text-align: center;
+            /* identical to box height */
+            color: #070F18;
+        }
+        .service2 p {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 32px;
+            /* or 200% */
+            text-align: center;
+            color: #575455;
+        }
+        #contactImg img{
+            width: 90%;
+            border-radius: 40px;
+            margin-top: 15%;
+        }
+        #contactForm h2{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            /* identical to box height */
+            color: #1F7CFF;
+        }
+        #contactForm h1 {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 54px;
+            /* identical to box height */
+            color: #000000;
+        }
+        #contactForm p {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 32px;
+            /* or 200% */
+            color: #575455;
+        }
+        #contactForm {
+            margin-top: 15%;
+            text-align: left;
+        }
+        #contactForm input {
+            background: #F5F6FB;
+            border-radius: 50px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            /* identical to box height */
+            color: #575455;
+            border: 0;
+            width: 55%;
+            padding: 10px 20px 10px 20px;
+        }
+        #contactForm button {
+            background: #1F7CFF;
+            border-radius: 50px;
+            border: 0;
+            width: 20%;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            /* identical to box height */
+            text-align: center;
+            color: #FFFFFF;
+            padding: 10px 30px 10px 30px;
+            margin-top: 3%;
+        }
+        #works h3 {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            /* identical to box height */
+            text-align: left;
+            color: #1F7CFF;
+            margin-top: 12%;
+        }
+        #works h1 {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 54px;
+            /* identical to box height */
+            text-align: left;
+            color: #000000;
+        }
+        #worksPhotos img {
+            width: 50%;
+            margin-top: 5%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="header">Portfolio</div>
+        <div id="menu">
+            <ul>
+                <li><a href="#service">Meus serviços</a></li>
+                <li><a href="#contact">Contato</a></li>
+                <li><a href="#works">Portfolio</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+         <div id="name1">
+            <h1>
+                Ola, meu nome<br>
+                é Marco
+            </h1>
+            <p>
+                Sou um programador e gostaria de apresentar<br>
+                meu trabalho para você através deste portfólio.
+            </p>
+            <a id="button" href="#service">Meus Serviços</a>
+         </div>
+         <div id="imagem">
+            <img src="imagem.jpeg">
+         </div>
+    </div>
+    <div class="container" id="parceiros">
+        <div class="clienttext">
+            algum dos<br>
+            meus clientes
+        </div>
+        <div class="clientlogo">
+            <img src="img/riot-games.svg">
+        </div>
+        <div class="clientlogo">
+            <img src="img/slack.svg">
+        </div>
+        <div class="clientlogo">
+            <img src="img/spotify.svg">
+        </div> 
+    </div>
+    <div class="container" id="service">
+        <div id="service1">
+            <h3>Conheça</h3>
+            <h1>Meus Serviços</h1>
+            <h2>Irei ajudar sua empresa<br>
+            a criar seu proprio site</h2>
+        </div>
+    </div>
+    <div class="container">
+        <div class="service2" id="imagem2">
+            <img src="img/trabalho.svg">
+            <h3>Consultoria</h3>
+            <p>Te ajudo a organizar sua empresa
+            e melhorar seus resultados.</p>
+        </div>
+        <div class="service2" id="imagem2">
+            <img src="img/mail.svg">
+            <h3>E-mail Marketing</h3>
+            <p>Gerenciar campanhas é difícil.<br>
+            Conte comigo para te ajudar.</p>
+        </div>
+        <div class="service2" id="imagem2">
+            <img src="img/site.svg">
+            <h3>Criação de Sites</h3>
+                <p>Desenvolvo seu site inteiro<br>
+                do zero e te entrego prontinho</p>
+        </div>
+    </div>
+    <div class="container" id="contact">
+        <div id="contactImg">
+            <img src="empresa.jpeg">
+        </div>
+        <div id="contactForm">
+            <h2 class="red">Economize seu tempo</h2>
+            <h1 class="black">Ganhe mais dinheiro</h1>
+            <p>Digite seu endereço de E-mail. Eu entrarei em<br>
+            contato para fornecer um diagnóstico gratuito.</p>
+            <form action="https://formspree.io/f/xeqwgkbz" method="POST">
+                <input placeholder="Seu E-mail" text="type" id="emailInput" name="contactEmail" required><br>
+                <button id="buttonId" type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <div id="works">
+            <h3>Conheça meu trabalho</h3>
+            <h1>Portfolio</h1>
+        </div>
+    </div>
+    <div class="container" id="worksPhotos">
+            <div>
+                <img src="img/work1.svg">
+            </div>
+            <div>
+                <img src="img/work2.svg">
+            </div>
+            <div>
+                <img src="img/work3.svg">
+            </div>
+    </div>
+</body>
+</html>
